@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructureapp.NowPlayingActivity">
+
+    <LinearLayout
+        style="@style/BottomMenu"
+        android:id="@+id/menu">
+
+        <TextView
+            style="@style/BottomMenuText"
+            android:text="Home"
+            android:drawableTop="@drawable/home"
+            android:id="@+id/home_button"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            style="@style/BottomMenuText"
+            android:text="Artists"
+            android:drawableTop="@drawable/artist"
+            android:id="@+id/artist_button"
+            android:layout_weight="1"
+            />
+        <TextView
+            style="@style/BottomMenuText"
+            android:text="Songs"
+            android:drawableTop="@drawable/music_white"
+            android:id="@+id/song_button"
+            android:layout_weight="1"
+            />
+        <TextView
+            style="@style/BottomMenuText"
+            android:text="Now Playing"
+            android:drawableTop="@drawable/play_white"
+            android:id="@+id/now_button"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/menu"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:id="@+id/buffer"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:src="@drawable/music_list"
+                android:padding="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/previous"
+                    android:padding="16dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play_icon"
+                    android:padding="16dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pause"
+                    android:padding="16dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/next"
+                    android:padding="16dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Song Title"
+                style=""/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artist Name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Album Name"/>
+
+            <TextView
+                style="@style/Explanation"
+                android:text="@string/now_explanation"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

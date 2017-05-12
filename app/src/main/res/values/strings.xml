@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Musical Structure App</string>
+    <string name="title_activity_now_playing">NowPlaying</string>
+    <string name="title_activity_bottom_menu">BottomMenu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="main_explanation">This is the main menu, with a link to all pages. The pictures at the top are all the albums available, with the possibility of scrolling through them. Through this app, there is only a pre-set selection of songs, they are simply reorganized. This app should have a comprehensible music library and use MediaMetadataRetriever to assign all the strings that relate to song assignment.</string>
+    <string name="artist_explanation">This page is the discography of an artist. Each song navigates to the now playing page. It would start playing that song, but it has not been implemented yet. The album art is also clickable and navigates to the album page. At the bottom is a menu with all the other main pages as options.</string>
+    <string name="song_explanation">This page is a list of all songs. All song TextViews link to the NowPlaying page and the menu at the bottom links back to the other main pages. The Song button in the menu is still apparent but it is not linked anymore.</string>
+    <string name="artists_explanation">This page is a list of all artists. All artist TextViews link to an artist page and the menu at the bottom links to all other major page. The Artists button in the menu is still apparent but it is not linked anymore.</string>
+    <string name="album_explanation">This page is a list of all songs on an album, the songs are all linked to the NowPlaying page and the play button on the banner is meant as a "play all" and also links to the NowPlaying page. The menu at the bottom has links to all major pages.</string>
+    <string name="now_explanation">This page is linked from all "play" options. The title appearing below the image would be of the song playing and the buttons would control the song currently playing. No management of audio files or information about them has been implemented so this page is static in this version. The menu at the botton links to all other major pages and the Now Playing button, though still apparent does not link to anything. \n This page utilizes the class MediaPlayer to control the song. When the page is opened, if a song was selected to navigate to this page, the song should start to play. If the page was reached through a menu button before a song was selected, no song should play, and the play button should activate a song at random. </string>
+</resources>
